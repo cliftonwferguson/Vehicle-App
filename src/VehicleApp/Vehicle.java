@@ -11,6 +11,13 @@ public Vehicle(String name) {
 	this.currentDirection = 0;
 }
 
-
-	
+public void steer(int direction) {
+	this.currentDirection += direction;
+	System.out.println("Steer method called: Steering at "+ currentDirection+ " degrees.");
+}
+	public void move(int speed, int direction) {
+		currentSpeed = speed;
+		currentDirection = direction;
+	System.out.println("move method called: Moving at "+currentSpeed+ " in direction" + currentDirection);
+	}
 }
